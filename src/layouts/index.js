@@ -16,6 +16,7 @@ const Layout = ({ children, data }) => (
       <link rel="icon" href="logo1.png" type="image/png" sizes="16x16"/>
       <script src="https://kit.fontawesome.com/a892cf4061.js" crossorigin="anonymous"></script>
       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+      <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
       {/* <script type="text/javascript">
           (function() {
               emailjs.init('user_w7fYigvT1K4GzYjLBYJlo')
