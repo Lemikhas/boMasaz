@@ -30,7 +30,7 @@ header{
     background-position: center, bottom, right top ;
     background-image: linear-gradient(to right,var(--bg),rgba(240, 234, 224, 0.2),rgba(240, 234, 224, 0.2)),
                         linear-gradient(rgba(240, 234, 224, 0),var(--bg)),
-                        url("header_bg_img.jpg");
+                        url("/src/layouts/header_bg_img.JPG");
     background-repeat: no-repeat;
 }
 #header-logo{
@@ -150,7 +150,7 @@ ul {
     width: 100vw;
     background-size: 100%;
     background-position: top center, bottom center;
-    background-image: url("borderUp.png"),url("borderLow.png");
+    background-image: url("/src/layouts/borderUp.png"),url("/src/layouts/borderLow.png");
     background-repeat: no-repeat;
     padding: 5% 5% 15%;
 }

@@ -14,7 +14,6 @@ const Layout = ({ children, data }) => (
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <title>BoMasaż</title>
       <link rel="icon" href="logo1.png" type="image/png" sizes="16x16"/>
-      {/* <link rel="stylesheet" href="style.css"/> */}
       <script src="https://kit.fontawesome.com/a892cf4061.js" crossorigin="anonymous"></script>
       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
       {/* <script type="text/javascript">
