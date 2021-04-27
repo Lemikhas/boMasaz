@@ -7,13 +7,10 @@ const BlogPage = ({ data }) => (
     {data.allMarkdownRemark.edges.map(post => (
       <div key={post.node.id}>
         <h3>{post.node.frontmatter.title}</h3>
-        <small>
-          Posted by {post.node.frontmatter.author} on{' '}
-          {post.node.frontmatter.date}
-        </small>
+        <img src={post.node.frontmatter.featuredimage}/>
         <br />
         <br />
-        <Link to={post.node.frontmatter.path}>Read More</Link>
+        <Link to={post.node.fields.slug}>Read More</Link>
         <br />
         <br />
         <hr />
@@ -28,11 +25,14 @@ export const pageQuery = graphql`
       edges {
         node {
           id
+          fields{
+            slug
+          }
           frontmatter {
-            path
             title
             date
-            author
+            description
+            featuredimage
           }
         }
       }
