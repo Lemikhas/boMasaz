@@ -9,7 +9,7 @@ export default function Template({ data }) {
       <Link to="/blog">Go Back</Link>
       <hr />
       <h3>{post.frontmatter.title}</h3>
-      <img src={post.node.frontmatter.featuredimage} className="blogpost-image"/>
+      <img src={post.frontmatter.featuredimage} className="blogpost-image"/>
       <div dangerouslySetInnerHTML={{ __html: post.html }} className="blogpost-content"/>
     </div>
   )
