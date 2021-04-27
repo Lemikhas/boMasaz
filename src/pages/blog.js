@@ -7,7 +7,9 @@ const BlogPage = ({ data }) => (
     {data.allMarkdownRemark.edges.map(post => (
       <div key={post.node.id}>
         <h3>{post.node.frontmatter.title}</h3>
-        <img src={post.node.frontmatter.featuredimage}/>
+        <img src={post.node.frontmatter.featuredimage} style={{
+          maxWidth="50vw"
+        }}/>
         <br />
         <br />
         <Link to={post.node.fields.slug}>Read More</Link>
