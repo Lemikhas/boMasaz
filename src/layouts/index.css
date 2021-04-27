@@ -37,6 +37,13 @@ header{
     height: 70%;
 }
 
+.blog-image, .blogpost-image{
+    width: 50vw;
+}
+.blogpost-content{
+    width: 100vw;
+}
+
 menu{
     background-color: rgba(10, 10, 10, 0.5);
     width: 60vw;
